@@ -1,0 +1,18 @@
+width = 500 # width
+height = 400
+
+th = [0~2]*PI*4
+
+A = (250+240*cos(th),10)
+B = (10,200+190*sin(th))
+C = (400,300) + (cos(th),sin(th))*90
+AB = seg(A,B)
+BC = seg(B,C)
+CA = seg(C,A)
+
+D = (B+C)/2
+E = (C+A)/2
+F = (A+B)/2
+AD = seg(A,D)
+BE = seg(B,E)
+CF = seg(C,F)

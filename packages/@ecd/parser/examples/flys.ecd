@@ -1,0 +1,8 @@
+width = 500 # width
+height = 300
+
+R1 = (random()*500, random()*300)
+R2 = (random()*500, random()*300)
+R3 = (random()*500, random()*300)
+R4 = (random()*500, random()*300)
+R5 = (random()*500, random()*300)

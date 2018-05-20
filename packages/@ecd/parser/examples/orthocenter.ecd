@@ -1,0 +1,27 @@
+width = 500 # width
+height = 400
+
+_th = [0~2]*PI
+
+D = B + (A-B)/dot(A-B, A-B) * dot(C-B, A-B)
+E = A + (C-A)/dot(C-A, C-A) * dot(B-A, C-A)
+F = C + (B-C)/dot(B-C, B-C) * dot(A-C, B-C)
+
+A = (250+240*cos(th),10)
+B = (10,200+190*sin(th))
+C = (400,300) + (cos(th),sin(th))*90
+AB = seg(A,B)
+BC = seg(B,C)
+CA = seg(C,A)
+
+_D2 = D*2 - C
+_D3 = C*2 - D
+DD2 = seg(D3,D2)
+
+_E2 = 2*E - B
+_E3 = B*2 - E
+EE2 = seg(E3,E2)
+
+_F2 = F*2 - A
+_F3 = A*2 - F
+FF2 = seg(F3,F2)

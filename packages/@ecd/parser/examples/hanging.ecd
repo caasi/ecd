@@ -1,0 +1,14 @@
+width = 200 # width
+height = 300
+
+th = [0~2]*PI
+
+A = (width/2, 3)
+B = A + (0, 80) + (20*cos(th*19),2*sin(th*11))
+C = B + (0, 60) + (20*cos(th*31),2*sin(th*17))
+D = C + (0, 50) + (20*cos(th*37),2*sin(th*23))
+_E = D + (0, 40) + (40*cos(th*43),2*sin(th*23))
+AB = seg(A,B)
+BC = seg(B,C)
+CD = seg(C,D)
+DE = seg(D,E)

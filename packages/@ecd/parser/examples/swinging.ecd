@@ -1,0 +1,6 @@
+width = 500 # width
+height = 300
+
+th = [0~2]*PI
+
+Abzr = bzr((10, 150+0*cos(th)), (110, 150+200*sin(th)), (210, 150+200*cos(th)), (410, 150+150*sin(th)))
