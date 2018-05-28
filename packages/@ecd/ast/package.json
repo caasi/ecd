@@ -2,13 +2,20 @@
   "name": "@ecd/ast",
   "version": "0.0.1",
   "description": "the AST of the extended canvas designer language",
-  "main": "src/index.js",
+  "module": "src/index.js",
+  "main": "lib/index.js",
   "author": "caasi Huang",
   "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build"
   },
-  "dependencies": {
-  }
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.73.0"
+  },
+  "dependencies": {}
 }
